@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+outputs/
+data/visa/
+data/*.tar
+data/*.part
+backbones/
+experiments/
+.test-artifacts/
+
+PROGRESS.md

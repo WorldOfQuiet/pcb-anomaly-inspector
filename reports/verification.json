@@ -1,0 +1,60 @@
+{
+  "cpu_vs_frozen_gpu": {
+    "all_decisions_match": true,
+    "cpu_predictions_sha256": "7535e016d8893d9cd9a91fde609dcc689d07423b22f855e44694a4813cb8f0e3",
+    "gpu_predictions_sha256": "a8c3822d57b1977eb86b2df0457db76e54303edbc776688c28e64d673016eb9b",
+    "maximum_absolute_score_difference": 1.5735626220703125e-05,
+    "note": "Comparison of saved predictions only; no parameter or threshold tuning.",
+    "samples": 180
+  },
+  "data": {
+    "all_1104_images_extracted_and_sha256_verified": true,
+    "archive_sha256": "2eb8690c803ab37de0324772964100169ec8ba1fa3f7e94291c9ca673f40f362",
+    "manifest_sha256": "cb4e55b104a4f0f8d3638f23955bfb4085fcc672fea56fa559e9546d872ebb89",
+    "split_assignment_semantic_sha256": "0396fa8cee764a7e004ec5b9c8bb3381883400edf737d3fa58a54219299856a7",
+    "split_assignments_unchanged": true
+  },
+  "installation": {
+    "environment": "independent local virtual environment",
+    "imports_from_original_project": false,
+    "method": "uv sync --frozen --extra test",
+    "torch": "2.10.0+cpu"
+  },
+  "model": {
+    "model_sha256": "66366f7f5259c09fb66191d4f44602355df2cbfd030d58abaaa731845a9dafb0",
+    "threshold": 1.5928595066070557,
+    "unchanged_frozen_weights": true,
+    "weights_sha256": "95b5dd11f458d7f05cff5e75d570092b0961c493325ecc53868239cac2b00e1c"
+  },
+  "overlay": {
+    "alpha_one_equals_heatmap": true,
+    "alpha_zero_equals_decoded_original": true,
+    "raw_map_identical": true,
+    "scores_and_decisions_identical": true,
+    "tested_on_real_model": true
+  },
+  "recorded_at": "2026-11-09T11:29:16.972823+00:00",
+  "schema_version": 1,
+  "tests": {
+    "contract_suite": "32 passed, 1 optional real-inference test skipped",
+    "real_cpu_suite": "31 passed before two additional CLI-only regression cases",
+    "real_cpu_threads": 1,
+    "real_inference_samples": 3
+  },
+  "training_smoke": {
+    "calibration_alpha": 0.5,
+    "calibration_normal_images": 1,
+    "fit_calibration_disjoint_by_sha256": true,
+    "fit_normal_images": 1,
+    "memory_bank_rows": 10,
+    "model_reloaded_successfully": true,
+    "note": "One-image smoke only verifies fit/save/reload/calibrate mechanics, not model quality.",
+    "quality_claim": false
+  },
+  "final_test_suite": {
+    "command": "PCB_INSPECT_REAL_TEST=1 python -m pytest -q",
+    "passed": 33,
+    "failed": 0,
+    "warnings": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "alpha": 0.05,
+  "calibration_manifest_sha256": "0001616357eaa48e751d66e7f48b84dab9429c713c75211176ddc4b2f58f2389",
+  "calibration_split": "calibration_normal",
+  "comparison": "greater_than",
+  "device": "cuda:1",
+  "k": 191,
+  "model_sha256": "66366f7f5259c09fb66191d4f44602355df2cbfd030d58abaaa731845a9dafb0",
+  "n": 200,
+  "source_config_sha256": "2397fe252a1fbcae293279e34113e535ab72e0a4d5d86ebe9fb3289516f788fc",
+  "status": "calibrated",
+  "threshold": 1.5928595066070557,
+  "weights_sha256": "95b5dd11f458d7f05cff5e75d570092b0961c493325ecc53868239cac2b00e1c"
+}

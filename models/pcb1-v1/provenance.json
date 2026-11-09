@@ -1,0 +1,37 @@
+{
+  "calibration_n": 200,
+  "dataset": {
+    "archive_sha256": "2eb8690c803ab37de0324772964100169ec8ba1fa3f7e94291c9ca673f40f362",
+    "archive_url": "https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar",
+    "counts": {
+      "calibration_normal": 200,
+      "dev_anomaly": 20,
+      "dev_normal": 100,
+      "final_test": 180,
+      "fit_normal": 604
+    },
+    "grouping": "image-level; no physical board/session metadata available",
+    "manifest_sha256": "76011683e95fa1711728f27d366e640c6b4b9598143e86b92a480129f38079f6",
+    "official_csv_sha256": "a48557e6033318cb90556f706196bc9d247a776a23ea51aecee5a80dd0332995",
+    "protocol": "visa-pcb1-portfolio-v1",
+    "seed": 42,
+    "source_revision": "2a692ab575001cbde74d402d897a7286086c6199"
+  },
+  "fit_n": 604,
+  "frozen_at": "2026-10-31T10:30:49.597671+00:00",
+  "migration": "No weight, threshold, or preprocessing changes; metadata normalized to portable schema 1.",
+  "protocol": "visa-pcb1-portfolio-v1",
+  "seed": 42,
+  "source_adapter_sha256": "6719a1819136267272a7b06dc6d83338ece03652569d4169451014929be50b94",
+  "source_config_sha256": "2397fe252a1fbcae293279e34113e535ab72e0a4d5d86ebe9fb3289516f788fc",
+  "source_device_verification_sha256": "beaeae090ffcb862abe40587c559ddad3ffb6a15e849814a29b2a178eabf784c",
+  "source_fit_manifest_sha256": "6d1cbd7f82cfcd262038f84529bdc4ad76dee39ca5e74dc2d22c634f64f1af9a",
+  "source_freeze_sha256": "e8cab1d81ca6b559f2ad055d592fcc92d68604a5bac8ccba33f8bdc1820139a8",
+  "source_license": "VisA CC BY 4.0; anomalib Apache-2.0; torchvision BSD-3-Clause; see THIRD_PARTY_NOTICES.md",
+  "source_manifest_sha256": "76011683e95fa1711728f27d366e640c6b4b9598143e86b92a480129f38079f6",
+  "source_model_id": "pcb1-resnet18-v1",
+  "source_model_metadata_sha256": "30dd56cece862e3a700244d33b43cbc4954bff8f239264ab3656c8c509bad9b4",
+  "source_threshold_sha256": "e74bea0ead4c430ca5833e456da62175f53d872a8e00abe5988f8e83e330e26b",
+  "training_device": "cuda:1",
+  "training_gpu": "Tesla V100-SXM2-32GB"
+}

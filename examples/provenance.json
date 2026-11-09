@@ -1,0 +1,49 @@
+{
+  "authors": [
+    "Yang Zou",
+    "Jongheon Jeong",
+    "Latha Pemula",
+    "Dongqing Zhang",
+    "Onkar Dabeer"
+  ],
+  "examples": [
+    {
+      "example": "normal",
+      "expected_decision": "normal",
+      "label": 0,
+      "sample_id": "b80acc5f2f8b112cc243b893",
+      "sha256": "b80acc5f2f8b112cc243b893b2ad4a14d91b233bb0ba94ae146fbb4ae9cb8dc1",
+      "source_device": "cuda:1",
+      "source_path": "pcb1/Data/Images/Normal/0524.JPG",
+      "source_score": 1.3821641206741333,
+      "source_split": "dev_normal"
+    },
+    {
+      "example": "anomaly",
+      "expected_decision": "suspect",
+      "label": 1,
+      "sample_id": "a5cab41d212f58f5e8265a60",
+      "sha256": "a5cab41d212f58f5e8265a60273c6b52667299d0c97bdba66b29e9298296cb84",
+      "source_device": "cuda:1",
+      "source_path": "pcb1/Data/Images/Anomaly/003.JPG",
+      "source_score": 2.374255418777466,
+      "source_split": "dev_anomaly"
+    },
+    {
+      "example": "false-alarm",
+      "expected_decision": "suspect",
+      "label": 0,
+      "sample_id": "e1d230755ef4ad40870fa8b4",
+      "sha256": "e1d230755ef4ad40870fa8b44914ead1c3d7fbe75297771ccd9de040b5fbaa3e",
+      "source_device": "cuda:1",
+      "source_path": "pcb1/Data/Images/Normal/0362.JPG",
+      "source_score": 1.6065093278884888,
+      "source_split": "dev_normal"
+    }
+  ],
+  "image_changes": "Byte-identical source JPEGs; filenames changed. No resizing or recompression.",
+  "license": "CC BY 4.0",
+  "selection": "Three development examples illustrating correct normal, correct anomaly, and a false alarm under the fixed v1 threshold. These are illustrative, not an accuracy sample.",
+  "source": "https://github.com/amazon-science/spot-diff",
+  "source_revision": "2a692ab575001cbde74d402d897a7286086c6199"
+}

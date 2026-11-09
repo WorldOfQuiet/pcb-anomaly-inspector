@@ -1,0 +1,25 @@
+{
+  "disk_free": 22972633088,
+  "evaluated_device": "cuda:1",
+  "evaluated_gpu": "Tesla V100-SXM2-32GB",
+  "packages": {
+    "anomalib": "2.6.2",
+    "numpy": "2.4.6",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.17.1",
+    "torch": "2.10.0+cu126",
+    "torchvision": "0.25.0+cu126"
+  },
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "python": "3.11.16",
+  "ram_available": 21057658880,
+  "ram_total": 32498049024,
+  "recorded_at": "2026-10-31T10:31:18.891052+00:00",
+  "source_device_verification_sha256": "beaeae090ffcb862abe40587c559ddad3ffb6a15e849814a29b2a178eabf784c",
+  "source_hash": "8ca46fe82bfb87e5097824570eaf3993250468b5906bdf8320fc35cef5fb41b4",
+  "torch_cuda_device_mapping": {
+    "cuda:0": "NVIDIA GeForce RTX 4060",
+    "cuda:1": "Tesla V100-SXM2-32GB"
+  },
+  "torch_threads": 4
+}

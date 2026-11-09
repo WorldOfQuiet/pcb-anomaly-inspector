@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcb-inspect"
+version = "1.0.0"
+description = "Reproducible command-line PCB anomaly inspection with frozen PatchCore weights"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+license = "MIT"
+dependencies = [
+  "anomalib==2.6.2",
+  "torch==2.10.0",
+  "torchvision==0.25.0",
+  "numpy>=2,<3",
+  "pillow>=11,<13",
+  "opencv-python-headless>=4.11,<5",
+  "scikit-learn>=1.6,<2",
+  "timm>=1.0,<2",
+  "einops>=0.8,<1",
+  "psutil>=6,<8",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.3,<10"]
+
+[project.scripts]
+pcb-inspect = "pcb_inspect.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" }]
+torchvision = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux' or sys_platform == 'win32'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true

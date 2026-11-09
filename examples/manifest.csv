@@ -1,0 +1,4 @@
+sample_id,path,label,split,sha256,source_split,source_path
+b80acc5f2f8b112cc243b893,images/normal.jpg,0,examples,b80acc5f2f8b112cc243b893b2ad4a14d91b233bb0ba94ae146fbb4ae9cb8dc1,dev_normal,pcb1/Data/Images/Normal/0524.JPG
+a5cab41d212f58f5e8265a60,images/anomaly.jpg,1,examples,a5cab41d212f58f5e8265a60273c6b52667299d0c97bdba66b29e9298296cb84,dev_anomaly,pcb1/Data/Images/Anomaly/003.JPG
+e1d230755ef4ad40870fa8b4,images/false-alarm.jpg,0,examples,e1d230755ef4ad40870fa8b44914ead1c3d7fbe75297771ccd9de040b5fbaa3e,dev_normal,pcb1/Data/Images/Normal/0362.JPG

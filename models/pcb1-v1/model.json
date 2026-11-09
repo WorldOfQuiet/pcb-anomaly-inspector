@@ -1,0 +1,57 @@
+{
+  "backbone_weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "fit_inputs_sha256": "d3b0291b1de925c84fee9288ef8ac8958de9bc123d21d9b8b0d289f6b4b81d15",
+  "fit_n": 604,
+  "frozen": true,
+  "memory_bank_shape": [
+    6184,
+    384
+  ],
+  "model_id": "pcb1-v1",
+  "model_sha256": "66366f7f5259c09fb66191d4f44602355df2cbfd030d58abaaa731845a9dafb0",
+  "result_origin": "real_inference",
+  "schema_version": 1,
+  "spec": {
+    "automatic_postprocessing": false,
+    "backbone": "resnet18",
+    "backend": "anomalib.models.image.patchcore.torch_model.PatchcoreModel",
+    "backend_version": "2.6.2",
+    "layers": [
+      "layer2",
+      "layer3"
+    ],
+    "num_neighbors": 9,
+    "precision": "float32",
+    "preprocessing": {
+      "color": "RGB",
+      "crop": "none",
+      "exif_transpose": true,
+      "image_size": [
+        256,
+        256
+      ],
+      "interpolation": "Pillow.BILINEAR",
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "resize": "full_frame",
+      "scale": 255,
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    }
+  },
+  "threshold_sha256": "1b6febec192c169b74c4196797ac697fcaca4ccbbc6fd9e50598f6014db4669e",
+  "training": {
+    "batch_size": 8,
+    "coreset_sampling_ratio": 0.01,
+    "device": "cuda:1",
+    "seconds": 32.82502625400002,
+    "seed": 42
+  },
+  "weights_sha256": "95b5dd11f458d7f05cff5e75d570092b0961c493325ecc53868239cac2b00e1c"
+}

@@ -1,0 +1,95 @@
+{
+  "accuracy": 0.9111111111111111,
+  "all_input_accuracy": 0.9111111111111111,
+  "complete_case_accuracy": 0.9111111111111111,
+  "config_sha256": "2397fe252a1fbcae293279e34113e535ab72e0a4d5d86ebe9fb3289516f788fc",
+  "confusion_matrix": {
+    "FN": 7,
+    "FP": 9,
+    "TN": 91,
+    "TP": 73
+  },
+  "counts": {
+    "anomaly": 80,
+    "decided": 180,
+    "failed": 0,
+    "inputs": 180,
+    "normal": 100,
+    "processed": 180,
+    "undecided": 0
+  },
+  "created_at": "2026-10-31T10:31:18.827829+00:00",
+  "dataset_manifest_sha256": "76011683e95fa1711728f27d366e640c6b4b9598143e86b92a480129f38079f6",
+  "device": "cuda:1",
+  "evaluated_rows_sha256": "923e5b946d5fc69673e9910eb0a772c062cabcd0b951610a17762a08b472506b",
+  "f1": 0.9012345679012346,
+  "failures": [],
+  "false_reject_rate": {
+    "ci95_exact": [
+      0.041983595628391525,
+      0.16398225502964012
+    ],
+    "count": 9,
+    "n": 100,
+    "rate": 0.09
+  },
+  "freeze_sha256": "1055ab0d423b7d00a9794e89cbf54ebd288c48b27615a9bed06cf79f75bbcbb9",
+  "gpu_model": "Tesla V100-SXM2-32GB",
+  "image_auroc": 0.94875,
+  "image_average_precision": 0.931456426450032,
+  "inference_latency": {
+    "n": 180,
+    "p50": 0.005181460999892806,
+    "p95": 0.01180336940012692,
+    "unit": "seconds"
+  },
+  "metric_denominators": {
+    "accuracy": 180,
+    "all_input_accuracy": 180,
+    "complete_case_accuracy": 180,
+    "f1": 162,
+    "image_auroc": 180,
+    "image_average_precision": 180,
+    "precision": 82,
+    "recall": 80
+  },
+  "metric_derivation": "Complete-case and all-input accuracy denominators recomputed from unchanged prediction CSV; inference, scores, decisions, timing, and original timestamps preserved.",
+  "migration": "Existing frozen report; no rerun and no threshold tuning. CSV converted without changing scores or decisions.",
+  "miss_rate": {
+    "ci95_exact": [
+      0.03590635898933975,
+      0.17200833841988486
+    ],
+    "count": 7,
+    "n": 80,
+    "rate": 0.0875
+  },
+  "model_sha256": "66366f7f5259c09fb66191d4f44602355df2cbfd030d58abaaa731845a9dafb0",
+  "module": "defects",
+  "peak_process_rss_bytes": 2494976000,
+  "pixel_auroc": 0.9972700861231367,
+  "pixel_average_precision": 0.8831097331832732,
+  "pixel_protocol": "All processed images, including normal zero masks; raw 256x256 maps; GT masks nearest resize; no segmentation threshold.",
+  "positive_class": "anomaly",
+  "precision": 0.8902439024390244,
+  "predictions_sha256": "a8c3822d57b1977eb86b2df0457db76e54303edbc776688c28e64d673016eb9b",
+  "protocol": "visa-pcb1-portfolio-v1",
+  "recall": 0.9125,
+  "report_kind": "historical_gpu_baseline",
+  "request_latency": {
+    "n": 180,
+    "p50": 0.02610385749994748,
+    "p95": 0.04794180015012443,
+    "unit": "seconds"
+  },
+  "result_origin": "real_inference",
+  "run_id": "defects-final_test-v1",
+  "scope": "Image ranking metrics use successful labeled inputs; accuracy is an alias of complete_case_accuracy on decided inputs. All_input_accuracy counts failed, undecided, and unprocessed inputs as incorrect. Every denominator and failure count is explicit.",
+  "source_device_verification_sha256": "beaeae090ffcb862abe40587c559ddad3ffb6a15e849814a29b2a178eabf784c",
+  "source_hash": "8ca46fe82bfb87e5097824570eaf3993250468b5906bdf8320fc35cef5fb41b4",
+  "source_predictions_sha256": "4ddca2dad29ad14f14891ae40950b6084d487c3ff2da5f3262fc3152170cb385",
+  "split": "final_test",
+  "status": "complete",
+  "threshold": 1.5928595066070557,
+  "weights_sha256": "95b5dd11f458d7f05cff5e75d570092b0961c493325ecc53868239cac2b00e1c"
+}
