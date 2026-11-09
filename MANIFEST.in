@@ -2,7 +2,7 @@ include README.md LICENSE THIRD_PARTY_NOTICES.md uv.lock
 include data/pcb1-splits.csv
 recursive-include models *.pt *.json SHA256SUMS
 recursive-include examples *.jpg *.jpeg *.png *.csv *.json
-recursive-include docs *.png *.npy *.csv *.txt *.md
+recursive-include docs *.png *.npy *.csv *.txt *.md *.svg *.json *.py
 recursive-include reports *.json *.csv *.md
 recursive-include licenses *
 prune data/visa

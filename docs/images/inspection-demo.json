@@ -1,0 +1,18 @@
+{
+  "input_sha256": "a5cab41d212f58f5e8265a60273c6b52667299d0c97bdba66b29e9298296cb84",
+  "prediction_csv_sha256": "a5b4daa92697962b1fa76010535c952cd8f6531763b7d5b0906ba064e45b69b3",
+  "original_png_sha256": "998d195b68c58e432060f7d33df563d087790fb6d670333285c11e77f6bc1444",
+  "overlay_png_sha256": "ff2ce1dca189509272953ea0a5a0a707b87e08b385b6b8f519b780c233f4c141",
+  "raw_map_sha256": "2536e566e3adc80d594d4cb068ee38c90b9c4e4dd05ef0f4a4a8e7333ed79e67",
+  "detail_roi_xywh": [
+    697,
+    653,
+    310,
+    310
+  ],
+  "roi_rule": "310-pixel square centered on the maximum of the saved raw anomaly map",
+  "score": 2.374255895614624,
+  "threshold": 1.5928595066070557,
+  "decision": "suspect",
+  "images_modified": "Layout, scale, crop and outline annotations only; model artifacts and predictions unchanged"
+}
